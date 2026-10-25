@@ -3,7 +3,7 @@ import useCart from "../hooks/usecart";
 import Usenoms from "../hooks/usenoms";
 
 function ListeProduit() {
-  const { nomsd} = Usenoms();
+  const { noms} = Usenoms();
   // qui est une fonction qui permet de recuperer la fonction addToCart du store useCart ,il communique avec react par le biais de l'etat du store useCart
   const addToCart = useCart((state) => state.addToCart);// state est un objet qui contient l'etat du store useCart, il permet de recuperer la fonction addToCart du store useCart
   const [search, setSearch] = useState("");
